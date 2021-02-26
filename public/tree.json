@@ -1,0 +1,21 @@
+{
+	"firstName": "Jon",
+	"middleNames": [],
+	"lastName": "Doe",
+	"gender": "male",
+	"portrait": {
+		"fileName": "portrait.png",
+		"mimeType:": "image/png"
+	},
+	"images": null,
+	"dateOfBirth": "1970-01-01",
+	"placeOfBirth": null,
+	"dateOfMarriage": null,
+	"placeOfMarriage": null,
+	"dateOfDeath": null,
+	"placeOfDeath": null,
+	"parent": null,
+	"spouse": null,
+	"children": [],
+	"nodeCount": 1
+}
