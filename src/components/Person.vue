@@ -45,6 +45,8 @@ export default defineComponent({
 <style>
 .person .image {
 	float: left;
+    height: 80px;
+    overflow-y: hidden;
 }
 .person .image img {
 	width: 60px;
