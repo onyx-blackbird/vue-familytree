@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue';
+import { computed, defineComponent, PropType } from 'vue';
 
 import { IPerson } from '../misc/Person';
 
@@ -30,10 +30,12 @@ export default defineComponent({
 			const date = new Date(dateString);
 			return date.getFullYear();
 		}
-		let middle = ' ';
-		if (prop.person.middleNames.length > 0) {
-			middle = ` ${prop.person.middleNames.join(' ')} `;
-		}
+		const middle = computed(() => {
+			if (prop.person.middleNames.length > 0) {
+				return ` ${prop.person.middleNames.join(' ')} `;
+			}
+			return ' ';
+		});
 		return {
 			middle,
 			getYear,
